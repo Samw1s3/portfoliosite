@@ -1,12 +1,16 @@
 :root {
-
+}
 h1 {
-    fonct-size: 4rem;
-}
+    font-size: 4rem;
+    }
 h2 {
-    fonct-size: 3.5rem;
+    font-size: 3rem;
+    }
+
+h3 {
+    font-size: 2.5rem;
 }
-}
+/* Navigation bar */
 header {
     position:relative;
     display: flex;
@@ -49,10 +53,17 @@ nav {
 }
 
 .banner {
-    display: flex;
     width: 100%;
     height: 150px;
     border-radius: 8px;
+    position: relative;
+    display:inline-flex;
+    width:100%;
+    background-image: linear-gradient(
+        #003F91 0%,
+        #5DA9E9 100%);
+  
+
 }
 
 
@@ -73,25 +84,16 @@ nav {
 img {
     max-width: 50%;
 }
+ 
 
-.banner {
-    position: relative;
-    display:inline-flex;
-    width:100%;
-    background-image: linear-gradient(
-        #003F91 0%,
-        #5DA9E9 100%
-    ) ;
-   
 
-}
 #tagline {
     justify-content: flex-end;
     text-align: end;
     width:90%;
     padding-right: 5%;
     padding-top: 4.5%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: aliceblue;
 }
 
@@ -105,15 +107,78 @@ img {
     display: flex;
     flex: wrap;
 }
+
+/* About Me section */
 .about-me {
     display:flex;
     justify-content: center;
+    
 }
-#aboutme {
-    padding: 20px;
-    margin: 50px 100px 50px 100px;
+#aboutmetitle {
+    padding: 100px 20px 20px 75px;
+    border-right: 3px solid #5DA9E9;
+    height: 225px;
+    width: 20%;
+    justify-content: center;
+    margin-top: 10px;
 }
 article {
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
     padding: 1rem;
+    font-size: 1.5rem;
+    margin: 10px 200px 20px 20px;
+    line-height: 2;
+    width: 80%;
+}
+
+p {
+    font-size: 3rem;
+}
+
+/*Main Work Section */
+.mainwork{
+    display:flex;
+}
+.work {
+    width: 20%;
+    padding: 100px 20px 20px 75px;
+    border-right: 3px solid #5DA9E9;
+}
+
+.lead-img {
+    width: 100%;
+}
+
+/* Contact Me Section*/
+
+.contactmesection {
+    display: flex;
+}
+#contact {
+    padding: 100px 20px 20px 75px;
+    border-right: 3px solid #5DA9E9;
+    height: 225px;
+    width: 20%;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contactme {
+    display: flex;
+    justify-content: center
+    margin: 
+}
+
+.resume {
+    padding: 100px 20px 20px 75px;
+    border-right: 3px solid #5DA9E9;
+    height: 200px;
+    width: 20%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+
 }
