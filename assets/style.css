@@ -1,0 +1,21 @@
+:root {
+
+}
+
+.lead-img {
+    position:relative;
+    text-align: right;
+    color:white;
+    margin-right: 10%;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  color:black;
+}
+
+img {
+    max-width: 50%;
+}
