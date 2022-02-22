@@ -1,4 +1,10 @@
 :root {
+
+}
+
+body {
+
+    margin: 0 auto;
 }
 h1 {
     font-size: 4rem;
@@ -66,27 +72,6 @@ nav {
 
 }
 
-
-.lead-img {
-    position:relative;
-    text-align: right;
-    color:white;
-    margin-right: 10%;
-}
-
-.image-caption {
-  position: absolute;
-  bottom: 20px;
-  left: 16px;
-  color:black;
-}
-
-img {
-    max-width: 50%;
-}
- 
-
-
 #tagline {
     justify-content: flex-end;
     text-align: end;
@@ -101,11 +86,14 @@ img {
     border-radius: 20px 20px 20px 20px;
     padding: 5px ;
     margin-left: 1rem;
+    width: 175px;
+    height: auto;
     
 }
 .mainwork {
     display: flex;
     flex: wrap;
+    max-width: 100%;
 }
 
 /* About Me section */
@@ -139,21 +127,72 @@ p {
 /*Main Work Section */
 .mainwork{
     display:flex;
+    flex: wrap;
+    width: 100%
 }
-.work {
-    width: 20%;
+.workcolumn {
+    display: inline-block;
     padding: 100px 20px 20px 75px;
     border-right: 3px solid #5DA9E9;
+    height: auto;
+    width: 20%;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mainprojects {
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 10px 200px 20px 20px;
+    line-height: 2;
+    width: 80%;
+}
+
+.leadingbox {
+    width: 60%;
+    max-width: 1000px;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .lead-img {
-    width: 100%;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 100%;
+    height:auto;
+    width: 700px;
+    margin: 15%;
+
+    
+}
+.image-stop {
+    max-width: 50%;
+    height:auto;
+    padding: 20px;
+    display: flex;
+    flex: wrap;
+
+}
+.images-bottom {
+    max-width: 50%;
+    height:auto;
+    padding: 20px;
+    display: flex;
+    flex: wrap;
 }
 
 /* Contact Me Section*/
 
 .contactmesection {
     display: flex;
+    width:auto
 }
 #contact {
     padding: 100px 20px 20px 75px;
@@ -166,9 +205,9 @@ p {
 .contactme {
     display: flex;
     justify-content: center
-    margin: 
+    
 }
-
+/* Resume section */
 .resume {
     padding: 100px 20px 20px 75px;
     border-right: 3px solid #5DA9E9;
@@ -177,7 +216,7 @@ p {
     justify-content: center;
     margin-top: 10px;
 }
-
+/* Footer */
 footer {
     text-align: center;
 
