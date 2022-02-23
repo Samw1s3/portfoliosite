@@ -63,6 +63,9 @@ nav {
     justify-content: flex-end;
 }
 
+nav ul li:hover {
+    border:#a3c7f7 outset 5px;
+}
 #nav-headings {
     color: rgb(54, 54, 241);
 }
@@ -81,7 +84,6 @@ nav {
     background-image: linear-gradient(
         #003F91 0%,
         #5DA9E9 100%);
-  
 
 }
 
@@ -139,7 +141,7 @@ article {
 }
 
 p {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /*Main Work Section */
@@ -172,7 +174,7 @@ p {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
 }
-
+/*Images in the work section */
 .leadingbox {
    
     max-width: 100%;
@@ -187,7 +189,7 @@ img {
 
 #minor-image{
     max-width: 100%;
-    width: 300px;
+    width: 400px;
     height: auto;
     filter: blur(5px);
     filter: grayscale(20px);
@@ -198,11 +200,16 @@ img {
     justify-content: center; 
     max-width: 100%;
     height:auto;
-   
-   
+    padding: 5%;
+    margin: 5%;
+}   
+.lead-img:hover {
+    padding: 0;
+    box-shadow: inset 0px 0px 50px #e4ee53;
+}
 
     
-}
+
 .images-top-container {
     max-width: 100%;
     height:auto;
@@ -240,8 +247,9 @@ img {
     height: auto;
 }
 #image-box:hover {
-box-shadow: inset 0px 0px 8px var(--headings), 0 0 15px var(--headings);
+    box-shadow: inset 0px 0px 30px #5DA9E9;
     cursor: grab;}
+    
 .image-caption-bottom-left {
     position: absolute;
     bottom: 20px;
@@ -276,6 +284,8 @@ box-shadow: inset 0px 0px 8px var(--headings), 0 0 15px var(--headings);
 /* Resume section */
 .resume-section {
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 #resume-heading {
     padding: 100px 20px 20px 75px;
@@ -288,9 +298,10 @@ box-shadow: inset 0px 0px 8px var(--headings), 0 0 15px var(--headings);
 #resume-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    text-align: center;
     align-content: center;
-    align-items: center;
+    max-width: 100%;
+    padding: 20px;
 }
 
 /* Footer */
@@ -306,7 +317,9 @@ footer {
     nav,
     .links, 
     section,
-    .banner {
+    .banner,
+    .contactme,
+    .resume-section {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -319,6 +332,9 @@ footer {
     }
     .banner {
         height:fit-content;
+    }
+    h1,h2,h3,h4,p {
+        flex-shrink: 1;
     }
 }
     
