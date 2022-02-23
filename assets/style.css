@@ -21,9 +21,11 @@ h3 {
 header {
     position:relative;
     display: flex;
-    flex: 1;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
     flex-wrap: wrap;
     width: 100%;
+    height:auto;
 }
 
 .title, header, nav, .links {
@@ -237,6 +239,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+#image-box:hover {
+box-shadow: inset 0px 0px 8px var(--headings), 0 0 15px var(--headings);
+    cursor: grab;}
 .image-caption-bottom-left {
     position: absolute;
     bottom: 20px;
@@ -298,10 +303,10 @@ footer {
 /* Responsive Layout */
 @media screen and (max-width: 768px) {
     Body,
-    header,
     nav,
     .links, 
-    section {
+    section,
+    .banner {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -311,6 +316,9 @@ footer {
     }
     nav {
         display: block;
+    }
+    .banner {
+        height:fit-content;
     }
 }
     
