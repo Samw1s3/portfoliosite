@@ -5,6 +5,7 @@
 body {
 
     margin: 0 auto;
+    flex: 1;
 }
 h1 {
     font-size: 4rem;
@@ -20,7 +21,8 @@ h3 {
 header {
     position:relative;
     display: flex;
-    flex: wrap;
+    flex: 1;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -61,6 +63,11 @@ nav {
 
 #nav-headings {
     color: rgb(54, 54, 241);
+}
+
+#github-link {
+    text-decoration: none;
+    color: black;
 }
 .banner {
     width: 100%;
@@ -262,7 +269,10 @@ img {
     
 }
 /* Resume section */
-.resume {
+.resume-section {
+    max-width: 100%;
+}
+#resume-heading {
     padding: 100px 20px 20px 75px;
     border-right: 3px solid #5DA9E9;
     height: 200px;
@@ -270,8 +280,37 @@ img {
     justify-content: center;
     margin-top: 10px;
 }
+#resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
 /* Footer */
 footer {
     text-align: center;
 
+
 }
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    Body,
+    header,
+    nav,
+    .links, 
+    section {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    #resume-heading, #contact-heading, .workcolumn, #aboutmetitle {
+    border: none;
+    }
+    nav {
+        display: block;
+    }
+}
+    
