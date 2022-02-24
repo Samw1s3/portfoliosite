@@ -8,7 +8,7 @@ This website has links withing the page, located in the navigation bar at the to
 <img src="assets\screenshot1.jpg" >
 <img src="assets\screenshot2.jpg">
 <img src="assets\screenshot3.jpg">
-<img src="assets\screenshot3.jpg">
+<img src="assets\screenshot4.jpg">
 
 
 ## References 
