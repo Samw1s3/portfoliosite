@@ -6,6 +6,11 @@ body {
     padding: 10px;
     margin-right: 20px;
 }
+
+.hide {
+    display: none;
+}
+
 h1 {
     font-size: 3.5em;
     }
@@ -254,7 +259,7 @@ img {
     left: 16px;
     z-index: 100;
     padding: 20px;
-    text-shadow:2px 2px  black ;
+    text-shadow:2px 4px  black ;
 }
 
 /* Contact Me Section*/
@@ -323,6 +328,14 @@ footer {
         margin-right: 3%;
     }
 
+    .hide {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+
     Body, nav, .links, section, .banner,.contactme, .resume-section {
       flex-direction: column;
       justify-content: flex-start;
@@ -342,6 +355,9 @@ footer {
         width: 100%;
     }
 
+    #turtle-heading {
+        bottom: -20px;
+    }
     .mainprojects {
         width: 100%;
         padding: 1%;
